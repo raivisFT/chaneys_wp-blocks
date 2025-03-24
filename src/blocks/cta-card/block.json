@@ -1,0 +1,99 @@
+{
+	"apiVersion": 3,
+	"name": "wp/cta-card",
+	"title": "WP CTA Card",
+	"category": "design",
+	"description": "Call to action card",
+	"textdomain": "default",
+	"attributes": {
+		"url": {
+			"type": "string",
+			"default": ""
+		},
+		"linkTarget": {
+			"type": "string",
+			"default": "_self"
+		},
+		"altText": {
+			"type": "string",
+			"default": ""
+		},
+		"btnText": {
+			"type": "string",
+			"default": ""
+		},
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"cardTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": "strong"
+		},
+		"titleColor": {
+			"type": "string",
+			"default": "black"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"contentStyle": {
+			"type": "string",
+			"default": ""
+		},
+		"columnAlign": {
+			"type": "string",
+			"default": "text-left"
+		},
+		"btnOnOff": {
+			"type": "string",
+			"default": "btnoff"
+		},
+		"tagH": {
+			"type": "string",
+			"default": "strong"
+		}, 
+		"tagHclass": {
+			"type": "string",
+			"default": "h3"
+		}, 
+		"imgOrgProp": {
+			"type": "string",
+			"default": ""
+		}, 
+		"contentOrgProp": {
+			"type": "string",
+			"default": ""
+		},
+		"titleOrgProp": {
+			"type": "string",
+			"default": ""
+		},
+		"priceOrgProp": {
+			"type": "string",
+			"default": ""
+		},
+		"isSchema": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"reusable": false,
+		"html": true,
+		"spacing": {
+			"padding": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
